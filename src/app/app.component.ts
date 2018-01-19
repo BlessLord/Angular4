@@ -1,12 +1,13 @@
 import { Component } from '@angular/core';
 import { DataService } from './data.service';
+import { trigger,state,style,transition,animate,keyframes } from '@angular/animations';
 @Component({
   selector: 'app-root',
   template: `
 
   <p>{{ someProperty }}</p>
 
-  
+
   <h1>Hey guys!</h1>
   <button [disabled]="buttonStatus">My Button</button>
   <button (mouseenter)="myEvent($event)">My Event button</button>
